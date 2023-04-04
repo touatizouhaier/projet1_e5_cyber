@@ -35,11 +35,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing'
+                sleep 10
             }
         }
         stage('DEPLOY') {
             steps {
                 echo 'Mise en Production'
+                sleep 10
             }
         }    
     }
